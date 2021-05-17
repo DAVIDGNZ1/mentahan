@@ -1000,13 +1000,14 @@ router.get('/textmaker', async (req, res, next) => {
         } else {
             res.json(loghandler.error)
         }
-})
+      </tr>
+      <!--<tr>
+      	<td bgcolor="green">Brainly scraper</td>
+      	<td>Mencari apapun di brainly</td>
+      	<td>q</td>
+      	<td><a href="/api/brainly?q=asw">Example</a></td>
+      </tr>-->
+    </table>
+  </body>
 
-router.get('/', (req, res, next) => {
-	res.redirect(__path + '/views/index.html')
-})
-
-router.get('/*', (req, res) => {
-	res.sendFile(__path + '/views/404.html')
-})
-module.exports = router
+</html>
